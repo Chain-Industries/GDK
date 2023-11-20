@@ -1,0 +1,125 @@
+/* Style for the overall container */
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;   
+  }
+  .button-icons-container {
+    display: flex;
+    align-items: center;
+  }
+  .button-icons-container img {
+    width: 35px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    margin-right: 25px;
+    filter: invert(1);
+
+  }
+
+  .button-icons-container button {
+    border: 1px solid white;
+    background-color: transparent; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 15px; /* Set padding to your liking */
+    border-radius: 5px; /* Set border-radius for rounded corners */
+    cursor: pointer;
+    font-size:22px; /* Set font size to your liking */
+    margin-right: 25px;
+  }
+
+  /* Style for the left section */
+  .left-section {
+    margin-left: 15%;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the title */
+  .left-section h1 {
+    margin-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .wallet-button{
+    border: none;  
+    background-color: blueviolet; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 15px; /* Set padding to your liking */
+    border-radius: 5px; /* Set border-radius for rounded corners */
+    cursor: pointer;
+    font-size: 20px; /* Set font size to your liking */
+    margin-right: 15px;
+  }
+  .wallet-button:hover{
+    border: 1px solid white;  
+    background-color:transparent; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+   
+  }
+
+  .mint-button{
+    border: none;  
+    background-color: blueviolet; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px 15px; /* Set padding to your liking */
+    border-radius: 5px; /* Set border-radius for rounded corners */
+    cursor: pointer;
+    font-size: 20px; /* Set font size to your liking */
+    margin-right: 15px;
+  }
+  .mint-button:hover{
+    border: 1px solid white;  
+    background-color:transparent; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+   
+  }
+
+  .left-section p {
+    margin-bottom: 10px;
+    font-size:25px;
+    font-family:Arial, Helvetica, sans-serif
+
+  }
+  
+  /* Style for the second button */
+  .left-section button:last-child {
+    margin-top: auto; /* Push the button to the bottom */
+  }
+  
+  /* Style for the right section */
+  .right-section {
+    flex: 1;
+  }
+  
+  /* Style for the image */
+  .right-section img {
+    width: 59%;
+    height: auto;
+    margin-left: 15%;
+  }
+  @media (max-width: 768px) {
+    /* Apply responsive styles for smaller screens */
+    .page-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15%;
+    }
+  
+    .left-section {
+      margin-bottom: 20px;
+    }
+  
+    .right-section .centered-image {
+      width: 100%;
+      margin-left: 10%;
+      margin-bottom: 20px;
+    }
+  }
